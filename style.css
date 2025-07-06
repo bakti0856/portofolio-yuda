@@ -1,0 +1,94 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #000000; /* dark background */
+  color: #fff; /* white text */
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background: #000;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  animation: slideDown 1s ease forwards;
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 100%;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+  border: #fff solid 2px;
+}
+
+/* Section content */
+section {
+  background: #111;
+  padding: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+section.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+h2 {
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
+}
+
+/* Project cards */
+.project {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 15px;
+  margin-top: 10px;
+  border-left: 4px solid #00bfff;
+  border-radius: 8px;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #000;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+#stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* Animasi */
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
