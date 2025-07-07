@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-  background: #000;
+  background: #09044d;
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -30,7 +30,7 @@ header {
 
 /* Section content */
 section {
-  background: #111;
+  background: #160c27;
   padding: 20px;
   max-width: 800px;
   margin: 30px auto;
@@ -44,6 +44,13 @@ section {
 section.visible {
   transform: translateY(0);
   opacity: 1;
+  text-transform: none;
+}
+.wa {
+  text-decoration: none;
+  margin-left: 70;
+  margin-bottom: 50vh;
+  color: #0af7ff;
 }
 
 h2 {
@@ -53,11 +60,21 @@ h2 {
 
 /* Project cards */
 .project {
-  background: #1a1a1a;
+  background: #000000;
   color: #fff;
   padding: 15px;
   margin-top: 10px;
-  border-left: 4px solid #00bfff;
+  border-left: 4px solid #086786;
+  border-radius: 8px;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+.project1 {
+  background: #000000;
+  color: #fff;
+  padding: 15px;
+  margin-top: 10px;
+  border-left: 4px solid #1800a1;
   border-radius: 8px;
   transform: scale(0.95);
   transition: transform 0.3s ease;
@@ -67,13 +84,18 @@ h2 {
   transform: scale(1.02);
 }
 
+.project1:hover {
+  transform: scale(1.02);
+}
+
 /* Footer */
 footer {
   text-align: center;
   background: #000;
-  color: white;
+  color: rgb(230, 230, 230);
   padding: 15px;
   margin-top: 40px;
+  border-top: #fff solid 2px;
 }
 #stars {
   position: fixed;
